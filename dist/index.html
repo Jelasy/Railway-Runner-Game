@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>3D Endless Runner</title>
+  <script type="module" crossorigin src="/assets/index-BAFqGW-q.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-YE2u4BkH.css">
+</head>
+
+<body>
+  <div id="hud">
+    <div class="pill">Score <b id="score">0</b></div>
+    <div class="pill">Coins <b id="coins">0</b></div>
+    <div class="pill">Best <b id="best">0</b></div>
+    <div class="pill">x<b id="mult">1</b></div>
+  </div>
+  <div id="side">
+    <div class="pill">Speed <b id="speed">54</b> km/h</div>
+    <div class="pill hidden" id="jetHud">🚀 <b>0</b>s</div>
+    <div class="pill hidden" id="magHud">🧲 <b>0</b>s</div>
+    <div class="pill hidden" id="shoeHud">⚡ <b>0</b>s</div>
+    <div class="pill" id="boardBtn">Board x<b id="boards">1</b> (H)</div>
+    <button class="btn" id="pauseBtn" style="font-size:14px;padding:3px 10px">Ⅱ</button>
+  </div>
+  <div id="missions"></div>
+  <div id="notice"></div>
+  <div id="flash"></div>
+  <div id="help">← → Move · ↑ Jump · ↓ Slide · H Board · P Pause · M Mute</div>
+
+  <div class="panel" id="start">
+    <h1>3D<br>ENDLESS RUNNER</h1>
+    <p>Choose a runner, dodge trains, collect coins and beat your best score!</p>
+    <div class="pill">Total Coins: <b id="total">0</b></div>
+    <div id="outfits"></div>
+    <button class="btn" id="startBtn">START GAME</button>
+  </div>
+
+  <div class="panel hidden" id="over">
+    <h2>GAME OVER</h2>
+    <div class="pill">Score <b id="finalScore">0</b></div>
+    <div class="pill">Coins <b id="finalCoins">0</b></div>
+    <div class="pill">Best <b id="finalBest">0</b></div>
+    <div id="ranking"></div>
+    <button class="btn" id="restartBtn">RUN AGAIN</button>
+  </div>
+
+  <div class="panel hidden" id="paused">
+    <h2>PAUSED</h2>
+    <button class="btn" id="resumeBtn">RESUME</button>
+  </div>
+
+  <!-- Modular Game Entry Point -->
+</body>
+
+</html>
